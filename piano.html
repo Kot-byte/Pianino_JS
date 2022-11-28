@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пианино на JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section>
+        <h1>Пианино на JavaScript</h1>
+        <h2>Используйте клавиатуру, наведите курсор для подсказки.</h2>
+    <section>
+         <!-- сюда будем выводить название ноты, клавишу которой мы нажали-->
+      <div class="nowplaying"></div>
+
+      <!-- блок с клавишами -->
+      <div class="keys">
+        <!-- структура такая: код на клавиатуре → название класса → название ноты → текст подсказки -->
+        <div data-key="65" class="key" data-note="C">
+            <span class="hints">A</span>
+        </div>
+        <div data-key="87" class="key sharp" data-note="C#">
+            <span class="hints">W</span>
+        </div>
+        <div data-key="83" class="key" data-note="D">
+            <span class="hints">S</span>
+        </div>
+        <div data-key="69" class="key sharp" data-note="D#">
+            <span class="hints">E</span>
+        </div>
+        <div data-key="68" class="key" data-note="E">
+            <span class="hints">D</span>
+        </div>
+        <div data-key="70" class="key" data-note="F">
+            <span class="hints">F</span>
+        </div>
+        <div data-key="84" class="key sharp" data-note="F#">
+            <span class="hints">T</span>
+        </div>
+        <div data-key="71" class="key" data-note="G">
+            <span class="hints">G</span>
+        </div>
+        <div data-key="89" class="key sharp" data-note="G#">
+            <span class="hints">Y</span>
+        </div>
+        <div data-key="72" class="key" data-note="A">
+            <span class="hints">H</span>
+        </div>
+        <div data-key="85" class="key sharp" data-note="A#">
+            <span class="hints">U</span>
+        </div>
+        <div data-key="74" class="key" data-note="B">
+            <span class="hints">J</span>
+        </div>
+        <div data-key="75" class="key" data-note="C">
+            <span class="hints">K</span>
+        </div>
+        <div data-key="79" class="key sharp" data-note="C#">
+            <span class="hints">O</span>
+        </div>
+        <div data-key="76" class="key" data-note="D">
+            <span class="hints">L</span>
+        </div>
+        <div data-key="80" class="key sharp" data-note="D#">
+            <span class="hints">P</span>
+        </div>
+        <div data-key="186" class="key" data-note="E">
+            <span class="hints">;</span>
+        </div>
+        </div>
+        <!-- аудиофайлы, каждый из них отвечает за свою ноту -->
+        <audio data-key="65" src="notes/040.wav"></audio>
+      <audio data-key="87" src="notes/041.wav"></audio>
+      <audio data-key="83" src="notes/042.wav"></audio>
+      <audio data-key="69" src="notes/043.wav"></audio>
+      <audio data-key="68" src="notes/044.wav"></audio>
+      <audio data-key="70" src="notes/045.wav"></audio>
+      <audio data-key="84" src="notes/046.wav"></audio>
+      <audio data-key="71" src="notes/047.wav"></audio>
+      <audio data-key="89" src="notes/048.wav"></audio>
+      <audio data-key="72" src="notes/049.wav"></audio>
+      <audio data-key="85" src="notes/050.wav"></audio>
+      <audio data-key="74" src="notes/051.wav"></audio>
+      <audio data-key="75" src="notes/052.wav"></audio>
+      <audio data-key="79" src="notes/053.wav"></audio>
+      <audio data-key="76" src="notes/054.wav"></audio>
+      <audio data-key="80" src="notes/055.wav"></audio>
+      <audio data-key="186" src="notes/056.wav"></audio>
+    </section>
+    </section>
+    <script  src="app.js"></script>
+</body>
+</html>
